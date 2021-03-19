@@ -1,5 +1,6 @@
 D:\learning\C#_Project\ConsoleApp-ShopingAndGetReceipt\ShoppingAndGetReceipt\ShoppingLibrary\bin\Debug\ShoppingLibrary.dll
 D:\learning\C#_Project\ConsoleApp-ShopingAndGetReceipt\ShoppingAndGetReceipt\ShoppingLibrary\bin\Debug\ShoppingLibrary.pdb
+D:\learning\C#_Project\ConsoleApp-ShopingAndGetReceipt\ShoppingAndGetReceipt\ShoppingLibrary\obj\Debug\ShoppingLibrary.csprojAssemblyReference.cache
 D:\learning\C#_Project\ConsoleApp-ShopingAndGetReceipt\ShoppingAndGetReceipt\ShoppingLibrary\obj\Debug\ShoppingLibrary.csproj.CoreCompileInputs.cache
 D:\learning\C#_Project\ConsoleApp-ShopingAndGetReceipt\ShoppingAndGetReceipt\ShoppingLibrary\obj\Debug\ShoppingLibrary.dll
 D:\learning\C#_Project\ConsoleApp-ShopingAndGetReceipt\ShoppingAndGetReceipt\ShoppingLibrary\obj\Debug\ShoppingLibrary.pdb

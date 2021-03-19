@@ -22,7 +22,7 @@ namespace ShoppingLibraryTest
             IExpensesCalculator expensesCalculator = GetExpensesCalculatorThatHaveNothingDiscount();
             double expectedTotalCost = 900;
             double expectedtotalDiscount = 0;
-            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) * TAX_RATE;
+            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) + ((expectedTotalCost - expectedtotalDiscount) * TAX_RATE);
             double actualTotalCost = expensesCalculator.GetTotalCost();
             double actualTotalDiscount = expensesCalculator.GetTotalDiscount();
             double actualTotalPay = expensesCalculator.GetTotalPay();
@@ -37,7 +37,7 @@ namespace ShoppingLibraryTest
             IExpensesCalculator expensesCalculator = GetExpensesCalculatorThatHaveDiscountFromSnack();
             double expectedTotalCost = 1300;
             double expectedtotalDiscount = _snackCostForDiscountPromotionTest;
-            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) * TAX_RATE;
+            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) + ((expectedTotalCost - expectedtotalDiscount) * TAX_RATE);
             double actualTotalCost = expensesCalculator.GetTotalCost();
             double actualTotalDiscount = expensesCalculator.GetTotalDiscount();
             double actualTotalPay = expensesCalculator.GetTotalPay();
@@ -52,7 +52,7 @@ namespace ShoppingLibraryTest
             IExpensesCalculator expensesCalculator = GetExpensesCalculatorThatHaveDiscountFromFurniture();
             double expectedTotalCost = 1050;
             double expectedtotalDiscount = _furnitureCostForDiscountPromotionTest * 0.10;
-            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) * TAX_RATE;
+            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) + ((expectedTotalCost - expectedtotalDiscount) * TAX_RATE);
             double actualTotalCost = expensesCalculator.GetTotalCost();
             double actualTotalDiscount = expensesCalculator.GetTotalDiscount();
             double actualTotalPay = expensesCalculator.GetTotalPay();
@@ -67,7 +67,7 @@ namespace ShoppingLibraryTest
             IExpensesCalculator expensesCalculator = GetExpensesCalculatorThatHaveDiscountFromMedicine();
             double expectedTotalCost = 900;
             double expectedtotalDiscount = _medicineCostForDiscountPromotionTest * 0.15;
-            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) * TAX_RATE;
+            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) + ((expectedTotalCost - expectedtotalDiscount) * TAX_RATE);
             double actualTotalCost = expensesCalculator.GetTotalCost();
             double actualTotalDiscount = expensesCalculator.GetTotalDiscount();
             double actualTotalPay = expensesCalculator.GetTotalPay();
@@ -82,7 +82,7 @@ namespace ShoppingLibraryTest
             IExpensesCalculator expensesCalculator = GetExpensesCalculatorThatHaveAllDiscountPromotion();
             double expectedTotalCost = 1450;
             double expectedtotalDiscount = _snackCostForDiscountPromotionTest + (_furnitureCostForDiscountPromotionTest * 0.10) + (_medicineCostForDiscountPromotionTest * 0.15);
-            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) * TAX_RATE;
+            double expectedtotalPay = (expectedTotalCost - expectedtotalDiscount) + ((expectedTotalCost - expectedtotalDiscount) * TAX_RATE);
             double actualTotalCost = expensesCalculator.GetTotalCost();
             double actualTotalDiscount = expensesCalculator.GetTotalDiscount();
             double actualTotalPay = expensesCalculator.GetTotalPay();

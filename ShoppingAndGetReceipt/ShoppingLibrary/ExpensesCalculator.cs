@@ -33,7 +33,7 @@ namespace ShoppingLibrary
         {
             double totalCost = _shoppingBag.GetProductList().Sum(x => x.Price);
             double totalDiscount = _discountors.Sum(x => x.GetTotalDiscount());
-            return (totalCost - totalDiscount) * TAX_RATE; 
+            return (totalCost - totalDiscount) + ((totalCost - totalDiscount) * TAX_RATE); 
         }
     }
 }

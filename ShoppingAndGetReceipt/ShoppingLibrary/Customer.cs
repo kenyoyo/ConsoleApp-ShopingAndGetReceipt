@@ -28,7 +28,7 @@ namespace ShoppingLibrary
             }
         }
 
-        public Customer(string name, int age)
+        public Customer(string name="Customer", int age=1)
         {
             Name = name;
             Age = age;
